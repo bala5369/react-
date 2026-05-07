@@ -6,11 +6,12 @@ function Navbar() {
   const {cart,setCart}=useContext(HelloContext)
   return (
     <>
-    <h1> Navbar </h1>
-    <Link to ="/"> Home </Link>
-    <Link to ='/products'id="two"> Products </Link>
-    <Link to ='/contact'id="three"> Contact  </Link>
-    <Link to ='/cart'id="four"> Cart ({cart.length}) </Link>
+    < nav id="navbar" >
+    <Link to ="/"id="one"> Home </Link>
+    <Link to ='/products'id="one"> Products </Link>
+    <Link to ='/contact'id="one"> Contact  </Link>
+    <Link to ='/cart'id="one"> Cart ({cart.length}) </Link>
+    </nav>
     </>
   )
 }
